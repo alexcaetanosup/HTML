@@ -1,0 +1,43 @@
+<!-- Forms -->
+<!-- - Capturar Dadsos de Entrada
+    - Input -> Entrada -->
+
+<!-- Action -> define para qual url 
+                será enviado os dados,
+                vazio envia para mesma url
+    METHOD
+    - GET
+    - POST -->
+
+<!-- Quando usar o type="file" - usar enctype="multipart/form-data" -->
+
+<form action="" method="get" enctype="multipart/form-data">
+    <h1>Digite o seu endereço</h1>
+    <label>
+        Rua:
+        <input type="text" name="rua" autocomplete="street-address" />
+    </label>
+    <br>
+    <br>
+    <label>
+        Número:
+        <input type="number" name="numero" />
+    </label>
+    <br>
+    <br>
+    <label>
+        e-mail:
+        <input type="email" name="email" />
+    </label>
+    <br>
+    <br>
+    <label>
+        Foto:
+        <input type="file" name="arquivo" />
+    </label>
+    <br>
+    <br>
+    <button type="reset">Reset</button>
+
+    <button type="submit">Enviar Dados</button>
+</form>
